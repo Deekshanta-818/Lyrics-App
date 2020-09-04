@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+    margin-left: 270px;
+    overflow: auto;
+   
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px red;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,75,121,1) 1%, rgba(0,212,255,1) 100%);
+    
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.title {
+    margin-left: 150px;
+    margin-bottom: 25px;
+    margin-right: 20px;   
+}
+.artist {
+    margin-left: 150px;
+    margin-right: 20px;
+}
+.btn {
+    margin-left: 250px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.lyrics {
+    text-align: center;
+    display: block;
+    position: relative;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 20px;
+    color: rgba(245, 253, 28, 1);
+}
+input {
+    border: 3px solid red;
+    border-radius: 20px;
+    padding: 5px;
+    
+}
+input:focus {
+    outline: none;
+}
+.btn {
+    
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: yellow;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px blue;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .btn:hover {background-color: black; color: blue;}
+  
+  .btn:active {
+    background-color: blue;
+    box-shadow: 0 5px red;
+    color: whitesmoke;
+    transform: translateY(4px);
   }
-  to {
-    transform: rotate(360deg);
+  label {
+      font-size: 25px;
+      color: yellowgreen;
+      font-family: 'Courgette', cursive;
   }
-}
+  .lyrics {
+      font-size: 25px;
+      
+  }
+  hr {
+    position: relative; 
+    top: 20px; 
+    border: none; 
+    height: 4px; 
+    background-color: pink 
+  }
+  h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+    
+    margin-bottom: 35px;
+    font-family: 'Hind', sans-serif;
+    font-size: 70px;
+    }
+    .app {
+        background-image: url('./musicBg.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+    }
